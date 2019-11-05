@@ -1,0 +1,133 @@
+body{
+      font-family: 'Big Shoulders Text', cursive;
+}
+
+div#topo{
+  line-height: 70px;
+  background-color: #363636;
+}
+
+div#logo img{
+  width: 50px;
+  height: 50px;
+}
+
+nav.menu {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+}
+
+header ul li {
+  display: inline;
+  padding: 10px;
+}
+
+header ul li:hover{
+  background-color: white;
+  color: black;
+}
+
+header ul li a{
+  font-size: 18px;
+  color: #01c5fd;
+  text-decoration: none;
+}
+
+header ul li a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+div#slider{
+  background-color: #363636;
+}
+
+i.fa{
+  position: relative;
+  top: 20px;
+  font-size: 65px;
+}
+
+i.fa-laptop-medical{
+  font-size: 70px;
+}
+
+div.service{
+  position: relative;
+  top: 40px;
+  margin-bottom: 20px;
+}
+
+div.service p{
+  position: relative;
+  top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+div.cta{
+  position: relative;
+  top: 80px;
+  background-image: linear-gradient(to right, black, #01c5fd);
+}
+
+div.cta p {
+  position: relative;
+  top: 30px;
+  font-size: 46px;
+  text-align: center;
+  color: white;
+}
+
+div.cta button{
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  bottom: 40px;
+  left: 43%;
+  border: none;
+}
+
+div.cta button:hover{
+  background: black;
+  color: white;
+}
+
+div.cta button a{
+  text-decoration: none;
+  color: black;
+}
+
+div.cta button a:hover{
+  color:white;
+}
+
+div.footer{
+  position: relative;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, black, #363636);
+  color: white;
+  line-height: 50px;
+}
+
+div.footer p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+div.footer a {
+  text-decoration: none;
+  position: relative;
+  left: 39%;
+  font-size: 42px;
+  text-align: center;
+  padding: 20px 20px 0 20px;
+  color: white;
+}
+
+div.footer a:hover{
+  color: #01c5fd;
+}
