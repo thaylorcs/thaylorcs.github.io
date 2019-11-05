@@ -1,4 +1,16 @@
-/*Desktop 1024*/
+@media only screen and (max-width: 1080px){
+    div.cta button{
+        position: relative;
+        left: 42%;
+    }
+
+    div.footer a {
+        position: relative;
+        left: 37%;
+    }
+}
+
+/*Largura 1024*/
 @media only screen and (max-width: 1024px){
     div.cta button{
         position: relative;
