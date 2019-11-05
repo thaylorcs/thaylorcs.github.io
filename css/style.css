@@ -70,6 +70,7 @@ div.cta{
   position: relative;
   top: 80px;
   background-image: linear-gradient(to right, black, #01c5fd);
+  margin-bottom: 40px;
 }
 
 div.cta p {
@@ -80,37 +81,45 @@ div.cta p {
   color: white;
 }
 
-div.cta button{
-  background: white;
+div.cta a{
+  background-color: white;
+  text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 25px;
+  border: none;
   position: relative;
   bottom: 40px;
-  left: 41%;
-  border: none;
+  left: 42%;
+  padding: 15px;
+  border-radius: 20;
 }
 
-div.cta button:hover{
-  background: black;
+div.cta a:hover{
+  background-color:black;
   color: white;
 }
 
-div.cta button a{
-  text-decoration: none;
-  color: black;
+div.contato{
+  background-color: #363636;
+  color: white;
+  position: relative;
+  top: 100px;
 }
 
-div.cta button a:hover{
-  color:white;
+div.contato form{
+  position: relative;
+  
 }
 
 div.footer{
   position: relative;
+  top: 60px;
   bottom: 0;
   background-image: linear-gradient(to bottom, black, #363636);
   color: white;
   line-height: 50px;
+  margin-top: 80px;
 }
 
 div.footer p {

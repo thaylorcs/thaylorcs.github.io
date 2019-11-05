@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1080px){
-    div.cta button{
+    div.cta a{
         position: relative;
         left: 42%;
     }
@@ -12,7 +12,7 @@
 
 /*Largura 1024*/
 @media only screen and (max-width: 1024px){
-    div.cta button{
+    div.cta a{
         position: relative;
         left: 41%;
     }
@@ -45,7 +45,7 @@
         padding: 17px; 
     }
 
-    div.cta button{
+    div.cta a{
         position: relative;
         left: 39%;
     }
@@ -64,7 +64,7 @@
 /*Smartphones 425*/
 @media only screen and (max-width: 425px){
 
-    div.cta button{
+    div.cta a{
         position: relative;
         left: 29%;
     }
@@ -78,7 +78,7 @@
 /*Tamanho para smartphones 375*/
 @media only screen and (max-width: 375px){
     
-    div.cta button{
+    div.cta a{
         position: relative;
         left: 29%;
     }
@@ -96,7 +96,7 @@
 @media only screen and (max-width: 320px){
     
 
-    div.cta button{
+    div.cta a{
         position: relative;
         left: 25%;
     }
