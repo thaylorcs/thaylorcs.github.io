@@ -70,7 +70,7 @@ div.cta{
   position: relative;
   top: 80px;
   background-image: linear-gradient(to right, black, #01c5fd);
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
 }
 
 div.cta p {
@@ -90,7 +90,7 @@ div.cta a{
   border: none;
   position: relative;
   bottom: 40px;
-  left: 42%;
+  /*left: 42%;*/
   padding: 15px;
 }
 
@@ -129,7 +129,7 @@ div.footer p {
 div.footer a {
   text-decoration: none;
   position: relative;
-  left: 39%;
+  /*left: 39%;*/
   font-size: 42px;
   text-align: center;
   padding: 20px 20px 0 20px;
