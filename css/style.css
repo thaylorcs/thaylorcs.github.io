@@ -139,3 +139,14 @@ div.footer a {
 div.footer a:hover{
   color: #01c5fd;
 }
+
+/*Calculadora*/
+table.table-dark{
+
+  color: #8CE6FF;
+}
+
+table tr td input{
+  position: relative;
+  top: 5px;
+}
