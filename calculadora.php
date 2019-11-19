@@ -18,7 +18,7 @@
     
 
     <form action="#">
-        <table class="table table-dark  table-striped">
+        <table class="table table-dark table-sm table-striped">
             <tr>
                 <td><p>Total de rendimentos:</p></td>
                 <td></td>

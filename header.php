@@ -16,11 +16,11 @@
 	
 	<div id="topo" class="container-fluid">
 		<header>
-			<div id="logo"><a href="#"><img src="img/logov2.png"></a></div>
+			<div id="logo"><a href="index.php"><img src="img/logov2.png"></a></div>
 			<nav class="menu float-right">
 				<ul>
-					<li><a href="#">home</a></li>
-					<li><a href="#">projetos</a></li>
+					<li><a href="index.php">home</a></li>
+					<li><a href="calculadora.php">projetos</a></li>
 					<li><a href="#">contato</a></li>
 				</ul>
 			</nav>
