@@ -14,7 +14,7 @@
     <h1>Calculadora de Doações - Instituto Hahaha</h1>
     <p>Esse foi meu primeiro trabalho, usando JS para uma instituição de caridade. 
     <br>Foi entregue em Outubro de 2018.
-    Por isso, pode ser que os cálculos podem não ser mais válidos.</p>
+    Por isso, pode ser que os cálculos não sejam mais válidos.</p>
     
 
     <form action="#">
