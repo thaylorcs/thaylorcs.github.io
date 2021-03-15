@@ -1,5 +1,5 @@
 body{
-      font-family: 'Big Shoulders Text', cursive;
+      font-family: 'Big Shoulders Text', serif;
 }
 
 div#topo{
@@ -128,17 +128,20 @@ div.profile p {
   text-align: center;
 }
 
-div.profile a {
+.socials {
+  flex-direction: column;
+}
+
+.socials a {
+  align-items: space-evenly;
   color: white;
-  font-size: 42px;
+  font-size: 36px;
+  padding: 5px;
   text-decoration: none;
-  position: relative;
-  text-align: center;
-  padding: 20px 20px 0 20px;
 }
 
 div.profile a:hover{
-  color: #01c5fd;
+  color: black;
 }
 
 /*Calculadora*/
@@ -149,17 +152,4 @@ table.table-dark{
 table tr td input{
   position: relative;
   top: 5px;
-}
-
-/*Profile Page*/
-
-.profile {
-  
-  
-  color: white;
-  display: flex;
-  flex-direction: column;
-  
-  
-  
 }
