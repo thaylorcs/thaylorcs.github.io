@@ -1,6 +1,6 @@
 <?php require_once('header.php'); ?>
 	<div class="container-fluid" id="slider">
-		<img class="img-fluid" src="img/servidores.jpg">
+		<img class="img-fluid" src="img/servidores.jpg" alt="Servidores">
 	</div>
 
 	<div class="container service text-center">
@@ -20,8 +20,8 @@
 		</div>
 	</div>
 	<div class="container cta text-center">
-		<p>Precisa de ajuda?</p> <br><br><br><br><br>
-		<a href="mailto:contato@thaylorcarvalho.com">Entre em contato</a>
+		<p>Precisa de ajuda?</p>
+		<a href="mailto:thaylorcs@outlook.com">Entre em contato</a>
 	</div>
 
 <?php require_once('footer.php'); ?>

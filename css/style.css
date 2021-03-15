@@ -67,31 +67,33 @@ div.service p{
 }
 
 div.cta{
+  align-items: center;
+  background-image: linear-gradient(to top, #01c5fd, black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   top: 80px;
-  background-image: linear-gradient(to right, black, #01c5fd);
-  /*margin-bottom: 40px;*/
 }
 
 div.cta p {
-  position: relative;
-  top: 30px;
+  color: white;
   font-size: 46px;
   text-align: center;
-  color: white;
+  /* position: relative; */
+  /* top: 30px; */
 }
 
 div.cta a{
   background-color: white;
-  text-decoration: none;
+  border: none;
   color: black;
   font-weight: bold;
   font-size: 25px;
-  border: none;
-  position: relative;
-  bottom: 40px;
-  /*left: 42%;*/
+  text-decoration: none;
+  max-width: 50%;
   padding: 15px;
+  margin-bottom: 40px;
 }
 
 div.cta a:hover{
