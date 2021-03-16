@@ -1,5 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
       font-family: 'Big Shoulders Text', serif;
+      display: flex;
+}
+
+.content{
+  width: 100vw;
+  overflow: auto;
+  height: 100vh;
 }
 
 div#topo{
@@ -8,39 +20,7 @@ div#topo{
 }
 
 div#logo img{
-  width: 50px;
-  height: 50px;
-}
-
-nav.menu {
-  position: absolute;
-  top: 0px;
-  right: 25px;
-}
-
-header ul li {
-  display: inline;
-  padding: 10px;
-}
-
-header ul li:hover{
-  background-color: white;
-  color: black;
-}
-
-header ul li a{
-  font-size: 18px;
-  color: #01c5fd;
-  text-decoration: none;
-}
-
-header ul li a:hover{
-  text-decoration: none;
-  color: black;
-}
-
-div#slider{
-  background-color: #363636;
+ border-radius: 50%;
 }
 
 i.fa{
@@ -53,13 +33,12 @@ i.fa-laptop-medical{
   font-size: 70px;
 }
 
-div.service{
-  position: relative;
-  top: 40px;
-  margin-bottom: 20px;
+.services{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-div.service p{
+.services p{
   position: relative;
   top: 40px;
   font-size: 30px;
@@ -112,16 +91,24 @@ div.contato form{
 }
 
 /*Profile Info*/
-div.profile{
+.profile{
   align-items: center;
   background-image: linear-gradient(to bottom, black, #01c5fd);
   color: white;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 70px);
+  height: 100vh;
   justify-content: space-evenly;
   line-height: 50px;
-  max-width: 20%;
+  min-width: calc(100vw - 80%);
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  color: white;
 }
 
 div.profile p {

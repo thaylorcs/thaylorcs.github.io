@@ -13,16 +13,3 @@
   	<script src="https://kit.fontawesome.com/3648c5f42b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	
-	<div id="topo" class="container-fluid">
-		<header>
-			<div id="logo"><a href="index.php"><img src="img/logov2.png" alt="Minha Logo"></a></div>
-			<nav class="menu float-right">
-				<ul>
-					<li><a href="index.php">home</a></li>
-					<li><a href="calculadora.php">projetos</a></li>
-					<li><a href="#">contato</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
