@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Thaylor Carvalho</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/logoTC.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <script src="js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/3648c5f42b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="profile">
+      <div id="logo">
+        <a href="index.php"><img src="img/logov2.png" alt="Minha Logo" /></a>
+      </div>
+      <h1>Thaylor Carvalho</h1>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="#">home</a></li>
+        </ul>
+      </nav>
+
+      <div class="container text-center">
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/thaylorcs/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/thaylorcs" target="_blank"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <a href="https://api.whatsapp.com/send?phone=5511978014551"
+            ><i class="fab fa-whatsapp-square"></i
+          ></a>
+          <a href="mailto:thaylorcs@outlook.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <p>2019 - <span class="site-year"></span></p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container-fluid" id="slider">
+        <img class="img-fluid" src="img/servidores.jpg" alt="Servidores" />
+      </div>
+
+      <div class="container services text-center">
+        <div class="row">
+          <div id="servidores" class="col-md-4">
+            <i class="fa fa-server"></i>
+            <p class="text-center">Administração de Servidores</p>
+          </div>
+          <div id="suporte" class="col-md-4">
+            <i class="fa fa-laptop-medical"></i>
+            <p>Suporte Técnico</p>
+          </div>
+          <div id="dev-web" class="col-md-4">
+            <i class="fa fa-code"></i>
+            <p>Desenvolvimento Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="container cta text-center">
+        <p>Precisa de ajuda?</p>
+        <a href="mailto:thaylorcs@outlook.com">Entre em contato</a>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.maskMoney.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("input.dinheiro").maskMoney({
+          showSymbol: false,
+          symbol: "R$",
+          decimal: ",",
+          thousands: ".",
+        });
+      });
+    </script>
+
+    <div class="content">
+      <!-- <div class="container">
+        <h1>Calculadora de Doações - Instituto Hahaha</h1>
+        <p>
+          Esse foi meu primeiro trabalho, usando JS para uma instituição de
+          caridade. <br />Foi entregue em Outubro de 2018. Por isso, pode ser
+          que os cálculos não sejam mais válidos.
+        </p>
+
+        <form action="#">
+          <table class="table table-dark table-sm table-striped">
+            <tr>
+              <td>
+                <p>Total de rendimentos:</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="total-rendimentos"
+                  onblur="calcDependentes();"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>Deduções</h3>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Quantidade de dependentes:</p>
+              </td>
+              <td>
+                <input
+                  size="2"
+                  maxlength="2"
+                  type="text"
+                  id="qtd-dependentes"
+                  onblur="calcDependentes();"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="valor-dependentes"
+                  disabled="disabled"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>INSS</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="val-inss"
+                  onblur="calcTotal();"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Despesas Médicas</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="desp-medicas"
+                  onblur="calcTotal();"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Despesas com Instrução:</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="desp-instrucao"
+                  onblur="calcTotal();"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Pensão Judicial:</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="pensao-judicial"
+                  onblur="calcTotal();"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Previdência Privada e FAPI</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="previdencia"
+                  onblur="calcTotal();"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Aposentado</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  id="aposentado"
+                  class="dinheiro"
+                  onblur="calcTotal();"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>Total de deduções</h3>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="total-deducoes"
+                  disabled="disabled"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Base de Cálculo</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="base-calculo"
+                  disabled="disabled"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Valor de Redução</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  name=""
+                  id="aliquota"
+                  class="dinheiro"
+                  disabled="disabled"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Imposto devido</p>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="imposto"
+                  disabled="disabled"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>Valor máximo da doação</h3>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="dinheiro"
+                  id="valor-doacao"
+                  disabled="disabled"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div> -->
+
+      <script type="text/javascript" src="js/calculator.js"></script>
+    </div>
+  </body>
+</html>
