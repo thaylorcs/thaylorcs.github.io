@@ -1,106 +1,30 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
-      font-family: 'Big Shoulders Text', serif;
-      display: flex;
+body {
+  font-family: 'Big Shoulders Text', serif;
 }
 
-/* .content{
-  width: 100vw;
-  overflow: auto;
-  height: 100vh;
-} */
-
-div#topo{
-  line-height: 70px;
-  background-color: #363636;
+#logo {
+  margin: 10px 20px;
+  max-width: 40px;
+  border-radius: 15px;
 }
 
-div#logo img{
- border-radius: 50%;
+.fa-align-right {
+  font-size: 20px;
 }
 
-i.fa{
-  position: relative;
-  top: 20px;
-  font-size: 65px;
+.logo-title {
+  margin-top: 10px;
 }
 
-i.fa-laptop-medical{
-  font-size: 70px;
-}
-
-.services{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.services p{
-  position: relative;
-  top: 40px;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-div.cta{
+.menu {
   align-items: center;
-  background-image: linear-gradient(to top, #01c5fd, black);
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  top: 80px;
-}
-
-div.cta p {
-  color: white;
-  font-size: 46px;
-  text-align: center;
-}
-
-div.cta a{
-  background-color: white;
-  border: none;
-  color: black;
-  font-weight: bold;
-  font-size: 25px;
-  text-decoration: none;
-  max-width: 50%;
-  padding: 15px;
-  margin-bottom: 40px;
-}
-
-div.cta a:hover{
-  background-color:black;
-  color: white;
-}
-
-div.contato{
-  background-color: #363636;
-  color: white;
-  position: relative;
-  top: 100px;
-}
-
-div.contato form{
-  position: relative;
-  
-}
-
-/*Profile Info*/
-.profile{
-  align-items: center;
-  background-image: linear-gradient(to bottom, black, #01c5fd);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-evenly;
-  line-height: 50px;
-  min-width: calc(100vw - 80%);
 }
 
 .menu li {
@@ -108,8 +32,55 @@ div.contato form{
 }
 
 .menu li a {
-  color: white;
+  color: black;
 }
+
+.hero {
+  position: relative;
+  display: flex;
+}
+
+.hero-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.hero-text {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 40%;
+  top: 50%;
+}
+
+.hero-contrast {
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+
+.services p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#servidores, #suporte, #dev-web{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-laptop-medical, .fa-code, .fa-server {
+  margin: 15px 30px 30px;
+  font-size: 32px;
+}
+
+.calculadora {
+  margin-top: 50px;
+}
+
+/*Profile Info*/
+
 
 div.profile p {
   text-align: center;
@@ -121,22 +92,22 @@ div.profile p {
 
 .socials a {
   align-items: space-evenly;
-  color: white;
+  color: black;
   font-size: 36px;
   padding: 5px;
   text-decoration: none;
 }
 
-div.profile a:hover{
-  color: black;
+div.profile a:hover {
+  color: #01c5fd;
 }
 
 /*Calculadora*/
-table.table-dark{
+table.table-dark {
   color: #8CE6FF;
 }
 
-table tr td input{
+table tr td input {
   position: relative;
   top: 5px;
 }
