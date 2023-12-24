@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Big Shoulders Text', serif;
+  font-family: 'Big Shoulders Text', 'Lato', 'Tahoma', sans-serif;
 }
 
 #logo {
@@ -58,13 +58,16 @@ body {
   text-shadow: 1px 1px white;
 }
 
+.services {
+  display: flex;
+}
 
 .services p {
   font-size: 24px;
   font-weight: bold;
 }
 
-#servidores, #suporte, #dev-web{
+#servidores, #suporte, #dev-web {
   align-items: center;
   display: flex;
   justify-content: space-between;
