@@ -1,3 +1,9 @@
+:root {
+  --black: black;
+  --white: white;
+  --blue: #0d80bf;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +38,7 @@ body {
 }
 
 .menu li a {
-  color: black;
+  color: var(--black);
 }
 
 .hero {
@@ -46,7 +52,7 @@ body {
 }
 
 .hero-text {
-  color: white;
+  color: var(--white);
   position: absolute;
   transform: translate(-50%, -50%);
   left: 40%;
@@ -54,8 +60,8 @@ body {
 }
 
 .hero-contrast {
-  color: black;
-  text-shadow: 1px 1px white;
+  color: var(--black);
+  text-shadow: 1px 1px var(--white);
 }
 
 .services {
@@ -95,19 +101,19 @@ div.profile p {
 
 .socials a {
   align-items: space-evenly;
-  color: black;
+  color: var(--black);
   font-size: 36px;
   padding: 5px;
   text-decoration: none;
 }
 
-div.profile a:hover {
-  color: #01c5fd;
+.socials a:hover {
+  color: var(--blue);
 }
 
 /*Calculadora*/
 table.table-dark {
-  color: #8CE6FF;
+  color: var(--blue);
 }
 
 table tr td input {
