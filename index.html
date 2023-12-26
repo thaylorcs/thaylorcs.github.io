@@ -70,120 +70,160 @@
       <div class="container calculadora">
         <h2>Calculadora de Doações - Instituto Hahaha</h2>
         <p>
-          Esse foi meu primeiro trabalho, usando JS para uma instituição de
-          caridade. Foi entregue em Outubro de 2018. Por isso, pode ser que os
-          cálculos não sejam mais válidos.
+          Esse foi meu primeiro trabalho, usando JavaScript para uma instituição
+          de caridade.
         </p>
 
-        <form action="#">
+        <form action="#" class="money-form">
           <fieldset>
             <legend>Rendimentos</legend>
-            <p>Total de rendimentos:</p>
+            <label for="total-rendimentos"
+              >Total de rendimentos:
+
+              <input
+                class="dinheiro form-control"
+                type="text"
+                id="total-rendimentos"
+                onblur="calcDependentes();"
+                required
+              />
+            </label>
           </fieldset>
           <fieldset>
             <legend>Deduções</legend>
 
-            <input
-              class="dinheiro form-control"
-              type="text"
-              id="total-rendimentos"
-              onblur="calcDependentes();"
-              required
-            />
-            <p>Quantidade de dependentes:</p>
-            <input
-              size="2"
-              maxlength="2"
-              type="text"
-              id="qtd-dependentes"
-              onblur="calcDependentes();"
-            />
-            <input
-              class="dinheiro form-control"
-              type="text"
-              id="valor-dependentes"
-              disabled="disabled"
-            />
-            <p>INSS</p>
-            <input
-              class="dinheiro form-control"
-              type="text"
-              id="val-inss"
-              onblur="calcTotal();"
-            />
-            <p>Despesas Médicas</p>
-            <input
-              class="dinheiro form-control"
-              type="text"
-              id="desp-medicas"
-              onblur="calcTotal();"
-            />
-            <p>Despesas com Instrução:</p>
-            <input
-              class="dinheiro form-control"
-              type="text"
-              id="desp-instrucao"
-              onblur="calcTotal();"
-            />
-            <p>Pensão Judicial:</p>
-            <input
-              class="dinheiro form-control"
-              type="text"
-              id="pensao-judicial"
-              onblur="calcTotal();"
-            />
-            <p>Previdência Privada e FAPI</p>
-            <input
-              class="dinheiro form-control"
-              type="text"
-              id="previdencia"
-              onblur="calcTotal();"
-            />
-            <p>Aposentadoria</p>
-            <input
-              class="dinheiro form-control"
-              type="text"
-              id="aposentado"
-              onblur="calcTotal();"
-            />
+            <label for="qtd-dependentes"
+              >Dependentes:
+
+              <input
+                size="2"
+                maxlength="2"
+                type="text"
+                id="qtd-dependentes"
+                onblur="calcDependentes();"
+              />
+              <input
+                class="dinheiro form-control"
+                type="text"
+                id="valor-dependentes"
+                disabled="disabled"
+              />
+            </label>
+            <label for="val-inss"
+              >INSS:
+              <input
+                class="dinheiro form-control"
+                type="text"
+                id="val-inss"
+                onblur="calcTotal();"
+              />
+            </label>
+            <label for="desp-medicas"
+              >Despesas Médicas
+
+              <input
+                class="dinheiro form-control"
+                type="text"
+                id="desp-medicas"
+                onblur="calcTotal();"
+              />
+            </label>
+            <label for="desp-instrucao"
+              >Despesas com Instrução:
+
+              <input
+                class="dinheiro form-control"
+                type="text"
+                id="desp-instrucao"
+                onblur="calcTotal();"
+              />
+            </label>
+            <label for="pensao-judicial"
+              >Pensão Judicial:
+
+              <input
+                class="dinheiro form-control"
+                type="text"
+                id="pensao-judicial"
+                onblur="calcTotal();"
+              />
+            </label>
+            <label for="previdencia"
+              >Previdência Privada e FAPI:
+
+              <input
+                class="dinheiro form-control"
+                type="text"
+                id="previdencia"
+                onblur="calcTotal();"
+              />
+            </label>
+            <label for="aposentado"
+              >Aposentadoria
+
+              <input
+                class="dinheiro form-control"
+                type="text"
+                id="aposentado"
+                onblur="calcTotal();"
+              />
+            </label>
           </fieldset>
 
-          <h3>Total de deduções</h3>
-          <input
-            class="dinheiro form-control"
-            type="text"
-            id="total-deducoes"
-            disabled="disabled"
-          />
-          <p>Base de Cálculo</p>
-          <input
-            class="dinheiro form-control"
-            type="text"
-            id="base-calculo"
-            disabled="disabled"
-          />
-          <p>Valor de Redução</p>
-          <input
-            class="dinheiro form-control"
-            type="text"
-            name=""
-            id="aliquota"
-            disabled="disabled"
-          />
-          <p>Imposto devido</p>
-          <input
-            class="dinheiro form-control"
-            type="text"
-            id="imposto"
-            disabled="disabled"
-          />
-          <h3>Valor máximo da doação</h3>
-          <input
-            class="dinheiro form-control"
-            type="text"
-            id="valor-doacao"
-            disabled="disabled"
-          />
+          <hr />
+
+          <label for="total-deducoes"
+            >Total de deduções
+
+            <input
+              class="dinheiro form-control"
+              type="text"
+              id="total-deducoes"
+              disabled="disabled"
+            />
+          </label>
+          <hr />
+          <label for="base-calculo"
+            >Base de Cálculo:
+
+            <input
+              class="dinheiro form-control"
+              type="text"
+              id="base-calculo"
+              disabled="disabled"
+            />
+          </label>
+          <label for="aliquota"
+            >Valor de Redução:
+
+            <input
+              class="dinheiro form-control"
+              type="text"
+              name=""
+              id="aliquota"
+              disabled="disabled"
+            />
+          </label>
+          <label for="imposto"
+            >Imposto devido:
+
+            <input
+              class="dinheiro form-control"
+              type="text"
+              id="imposto"
+              disabled="disabled"
+            />
+          </label>
+          <label for="valor-doacao"
+            >Valor máximo da doação:
+
+            <input
+              class="dinheiro form-control"
+              type="text"
+              id="valor-doacao"
+              disabled="disabled"
+            />
+          </label>
         </form>
       </div>
 

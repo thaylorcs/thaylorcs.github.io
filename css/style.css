@@ -1,5 +1,5 @@
 :root {
-  --black: black;
+  --black: #1f1a17;
   --white: white;
   --blue: #0d80bf;
 }
@@ -10,6 +10,7 @@
 }
 
 body {
+  color: var(--black);
   font-family: 'Big Shoulders Text', 'Lato', 'Tahoma', sans-serif;
 }
 
@@ -86,6 +87,32 @@ body {
 .calculadora {
   margin-top: 50px;
 }
+
+.money-form {
+  background-color: var(--blue);
+  color: white;
+  padding: 15px;
+}
+
+.money-form label {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin: 0 0;
+}
+
+.form-control {
+  max-width: 40%;
+  margin: 10px 0;
+}
+
+#qtd-dependentes {
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+}
+
 
 /*Profile Info*/
 
